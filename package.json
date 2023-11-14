@@ -1,14 +1,18 @@
 {
   "name": "sdy-active-check",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name sdy-active-check --dest lib src/components/active.js"
   },
   "dependencies": {
+    "axios": "^1.6.1",
     "core-js": "^3.8.3",
+    "lodash": "^4.17.21",
     "register-service-worker": "^1.7.2",
+    "view-design": "^4.7.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -19,6 +23,7 @@
     "less-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.14"
   },
+  "main": "lib/sdy-active-check.common.js",
   "browserslist": [
     "> 1%",
     "last 2 versions",

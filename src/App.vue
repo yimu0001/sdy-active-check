@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <checkActiveModal :username="13966606666" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import checkActiveModal from './components/active'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    checkActiveModal,
+  },
 }
 </script>
 
