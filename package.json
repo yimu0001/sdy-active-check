@@ -30,9 +30,6 @@
   },
   "author": "yimu",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
