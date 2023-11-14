@@ -28,7 +28,7 @@ import { on, off } from '../libs/common'
 import { Modal } from 'view-design'
 
 export default {
-  name: 'SdyActiveCheck',
+  name: 'sdy-active-check',
   props: {
     username: {
       type: String,
