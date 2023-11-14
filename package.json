@@ -24,6 +24,15 @@
     "vue-template-compiler": "^2.6.14"
   },
   "main": "lib/sdy-active-check.common.js",
+  "repository": {
+    "type": "git",
+    "url": "yimu0001"
+  },
+  "author": "yimu",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
