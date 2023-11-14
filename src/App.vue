@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <checkActiveModal :username="13966606666" />
+    <checkActiveModal username="13966606666" />
   </div>
 </template>
 

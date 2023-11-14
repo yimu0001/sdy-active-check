@@ -28,6 +28,7 @@ import { on, off } from '../libs/common'
 import { Modal } from 'view-design'
 
 export default {
+  name: 'SdyActiveCheck',
   props: {
     username: {
       type: String,
@@ -41,8 +42,8 @@ export default {
       quitTime: null,
       lastTime: new Date().getTime(), // 上次时间
       currentTime: new Date().getTime(), // 当前时间
-      timeOut: 1 * 60 * 1000, // 超时时间  60min
-      testTime: 0.5 * 60 * 1000, // 检测时间   5min
+      timeOut: 0.1 * 60 * 1000, // 超时时间  60min
+      testTime: 0.05 * 60 * 1000, // 检测时间   5min
     }
   },
   components: {
