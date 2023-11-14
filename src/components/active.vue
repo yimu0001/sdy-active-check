@@ -41,8 +41,8 @@ export default {
       quitTime: null,
       lastTime: new Date().getTime(), // 上次时间
       currentTime: new Date().getTime(), // 当前时间
-      timeOut: 60 * 60 * 1000, // 超时时间  60min
-      testTime: 5 * 60 * 1000, // 检测时间   5min
+      timeOut: 1 * 60 * 1000, // 超时时间  60min
+      testTime: 0.5 * 60 * 1000, // 检测时间   5min
     }
   },
   components: {
