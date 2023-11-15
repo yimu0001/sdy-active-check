@@ -22,6 +22,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "babel-plugin-import": "^1.13.8",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.14"
@@ -29,7 +30,7 @@
   "main": "lib/sdy-active-check.common.js",
   "repository": {
     "type": "git",
-    "url": "yimu0001"
+    "url": "git+https://github.com/yimu0001/sdy-active-check"
   },
   "author": "yimu",
   "license": "ISC",
