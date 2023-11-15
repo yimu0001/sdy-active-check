@@ -1,6 +1,6 @@
 <template>
   <div class="login-form-area">
-    <Card icon="log-in" :bordered="false" class="login-con-card">
+    <div icon="log-in" :bordered="false" class="login-con-card">
       <Tabs value="name1" @on-click="clickTabs">
         <TabPane label="账户密码登录" name="name1">
           <div class="form-con">
@@ -47,12 +47,12 @@
           <!-- <Button @click="reImg()">点击刷新</Button> -->
         </TabPane>
       </Tabs>
-    </Card>
+    </div>
   </div>
 </template>
 
 <script>
-import { Form, FormItem, Input, Button, Row, Col, Icon, Tabs, TabPane } from 'view-design'
+import { Form, FormItem, Input, Button, Row, Col, Icon, Tabs, TabPane, Card } from 'view-design'
 
 import 'view-design/dist/styles/iview.css'
 export default {
@@ -67,6 +67,7 @@ export default {
     Icon,
     Tabs,
     TabPane,
+    Card,
   },
   props: {
     userNameRules: {
@@ -92,6 +93,18 @@ export default {
       default: '1',
     },
     codeKey: '',
+    message: '',
+    codeKey: '',
+    coverImg: '/auth/qrcode',
+    tabsName: '',
+    statusWord: '等待扫码',
+    im: undefined,
+    entryType: undefined,
+    templateTitle: undefined,
+    qrcodeShow: undefined,
+    pwdForgetShow: undefined,
+    backgroundImg: '',
+    loginLogoUrl: '', //logo地址
   },
   data() {
     return {
@@ -118,12 +131,12 @@ export default {
     },
   },
   methods: {
-    setName(username) {
-      if (username) {
-        this.formItem.username = username
+    setName(userName) {
+      if (userName) {
+        this.form.userName = userName
         this.usernameDisabled = true
       } else {
-        this.formItem.username = username
+        this.form.userName = userName
         this.usernameDisabled = false
       }
       if (process.env.NODE_ENV === 'development') {
@@ -146,6 +159,21 @@ export default {
           })
         }
       })
+    },
+    clickTabs(name) {
+      this.tabsName = name
+      this.checkLogin()
+    },
+    checkLogin() {
+      // let code = Cookies.get("code");
+      // let item = {
+      //   code: code
+      // };
+    },
+    //刷新图片
+    reImg() {
+      this.coverImg = this.coverImg + '?' + Math.random()
+      this.statusWord = '等待扫码'
     },
   },
 }

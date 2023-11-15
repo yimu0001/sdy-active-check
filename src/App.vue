@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import checkActiveModal from './components/active'
+import checkActiveModal from './components/index'
 export default {
   name: 'App',
   components: {
