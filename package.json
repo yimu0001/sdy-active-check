@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name sdy-active-check --dest lib src/components/index.js"
   },
+  "bin": {
+    "touch-vue-pc": "src/components/index.js"
+  },
   "dependencies": {
     "axios": "^1.6.1",
     "core-js": "^3.8.3",
