@@ -1,5 +1,5 @@
-import activeModal from './active.vue'
-activeModal.install = function (Vue) {
-  Vue.component(activeModal.name, activeModal)
+import ActiveModal from './active.vue'
+ActiveModal.install = function (Vue) {
+  Vue.component(ActiveModal.name, ActiveModal)
 }
-export default activeModal
+export default ActiveModal
